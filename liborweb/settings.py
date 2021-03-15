@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'movies'
+    'movies',
 ]
 
 MIDDLEWARE = [
@@ -75,22 +75,8 @@ WSGI_APPLICATION = 'liborweb.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-
-
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangomovies',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': 'ALTER DATABASE djangomovies CHARACTER SET utf8 COLLATE utf8_czech_ci',
-        },
+        'ENGINE': 'django.db.backends.sqlite3','NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
