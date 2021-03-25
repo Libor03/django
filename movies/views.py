@@ -20,16 +20,6 @@ def index(request):
     """ Pomocí metody render vyrendrujeme šablonu index.html a předáme ji hodnoty v proměnné context k zobrazení """
     return render(request, 'index.html', context=context)
 
-def index(request):
-    """
-    View function for home page of site.
-    """
-    # Render the HTML template index.html
-    return render(
-        request,
-        'index.html',
-    )
-
 def topten(request):
     """
     View function for home page of site.
